@@ -1,5 +1,3 @@
-# Webpage Project
+# joyOfCssGrid
 
-This is the main repo that contains front-end web page design project for personal practice and future reference.
-
-There won't be any project files in the master branch. Individual projects may be found in sub-branches. 
+The follow up of the tutorial [The Joy of CSS Grid - Build 3 Beautifully Simple Responsive Layouts](https://www.youtube.com/watch?v=705XCEruZFs). Credit to Fireship.
