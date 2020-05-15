@@ -1,5 +1,3 @@
-# Webpage Project
+# webBeatMaker
 
-This is the main repo that contains front-end web page design project for personal practice and future reference.
-
-There won't be any project files in the master branch. Individual projects may be found in sub-branches. 
+A follow up implementation of [Build A Music App With Javascript Tutorial](https://www.youtube.com/watch?v=2VJlzeEVL8A&list=WL&index=2&t=0s). Credit to Dev Ed. 
