@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Grid</title>
+
+    <style>
+        .photo-grid {
+            display: grid;
+            gap: 1rem;
+
+            /* num of elements: how many columns we would like to add? */
+            /*
+            1. Auto fill vs auto fit
+            2. grid template columns css property 
+            */
+            /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-auto-rows: 240px;
+        }
+        .photo-grid > div {
+            border-width: 1px;
+            border-color: darkblue;
+            border-style: dashed;
+        }
+        @media screen and (min-width: 600px) {
+            .card-tall {
+                grid-row: span 2 / auto;
+            }
+            .card-wide {
+                grid-column: span 2 / auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="photo-grid">
+        <div class="card-tall">1</div>
+        <div class="card">2</div>
+        <div class="card">3</div>
+        <div class="card-tall">4</div>
+        <div class="card">5</div>
+        <div class="card-wide">6</div>
+        <div class="card">7</div>
+        <div class="card">8</div>
+        <div class="card">9</div>
+        <div class="card">10</div>
+        <div class="card">11</div>
+        <div class="card">12</div>
+    </section>
+</body>
+</html>
