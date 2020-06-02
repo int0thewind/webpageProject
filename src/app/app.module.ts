@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LayoutModule } from '@angular/cdk/layout';
+import { VersionDialogComponent } from './version-dialog/version-dialog.component';
 
 const angularMaterialModules = [
   MatButtonModule,
@@ -39,7 +40,8 @@ const angularMaterialModules = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    VersionDialogComponent
   ],
   imports: [
     BrowserModule,
