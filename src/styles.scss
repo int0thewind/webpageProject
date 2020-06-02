@@ -12,8 +12,16 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$angular-material-primary: mat-palette($mat-indigo);
-$angular-material-accent: mat-palette($mat-pink, A200, A100, A400);
+
+/*
+    function mat-palette(<color-variable>, <default-hue>, <lighter-hue>, <darker-hue>)
+    All the color names and hue value are on the https://material.io/design/color/ page.
+    Note that all the predefined color variables are in lower cases with `$mat-` prefix. 
+    If the color name has two words, they should be hypened. Ex. $mat-light-blue. 
+*/
+
+$angular-material-primary: mat-palette($mat-deep-orange);
+$angular-material-accent: mat-palette($mat-teal, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $angular-material-warn: mat-palette($mat-red);
@@ -26,7 +34,10 @@ $angular-material-theme: mat-light-theme($angular-material-primary, $angular-mat
 // that you are using.
 @include angular-material-theme($angular-material-theme);
 
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+}
