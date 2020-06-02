@@ -1,1 +1,18 @@
+<!-- Basic Material Toolbar -->
+<mat-toolbar color="primary">
+    <!-- We can have multiple rows in a toolbar.
+    In this example, we only have one row, which is not necessary to put a row here, but I still do it anyway for demonstration -->
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <!-- Angular Material Guide uses span for each elements in the toolbar. I don't know why, but I just followed it anyway.  -->
+        <span>Angular material Application</span>
+        <span class="toolbar-place-holder"></span>
+        <!-- The innerHTML of mat-icon denotes the icon. It can be referenced from https://material.io/resources/icons/?style=baseline -->
+        <mat-icon>info</mat-icon>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<ng-content></ng-content>
 <router-outlet></router-outlet>
