@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
 import { LayoutModule } from '@angular/cdk/layout';
 
 const angularMaterialModules = [
@@ -31,6 +32,7 @@ const angularMaterialModules = [
   MatFormFieldModule,
   MatInputModule,
   MatSnackBarModule,
+  MatDialogModule,
   LayoutModule,
 ];
 

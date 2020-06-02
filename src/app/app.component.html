@@ -14,7 +14,7 @@
             I don't know why, but I just followed it anyway.  -->
         <span>Angular material Application</span>
         <span class="toolbar-place-holder"></span>
-        <button mat-icon-button>
+        <button mat-icon-button (click)="openDialog()">
             <mat-icon>info</mat-icon>
         </button>
     </mat-toolbar-row>
@@ -31,7 +31,6 @@
     </mat-sidenav>
     <!-- The main content of the page should be restrained in the sidenav-container -->
     <mat-sidenav-content class="sidenav-content">
-        <p>Main content here!</p>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 
