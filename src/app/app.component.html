@@ -2,17 +2,37 @@
 <mat-toolbar color="primary">
     <!-- We can have multiple rows in a toolbar.
     In this example, we only have one row, which is not necessary to put a row here, but I still do it anyway for demonstration -->
+    <!-- The mat-toolbar-row is a flexbox.  -->
     <mat-toolbar-row>
-        <button mat-icon-button>
+        <!-- To allow an icon to be clickable,
+        embrace the icon with a button element and set the button to be mat-icon-button -->
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <!-- The innerHTML of mat-icon denotes the icon. It can be referenced from https://material.io/resources/icons/?style=baseline -->
             <mat-icon>menu</mat-icon>
         </button>
-        <!-- Angular Material Guide uses span for each elements in the toolbar. I don't know why, but I just followed it anyway.  -->
+        <!-- Angular Material Guide uses span for each elements in the toolbar.
+            I don't know why, but I just followed it anyway.  -->
         <span>Angular material Application</span>
         <span class="toolbar-place-holder"></span>
-        <!-- The innerHTML of mat-icon denotes the icon. It can be referenced from https://material.io/resources/icons/?style=baseline -->
-        <mat-icon>info</mat-icon>
+        <button mat-icon-button>
+            <mat-icon>info</mat-icon>
+        </button>
     </mat-toolbar-row>
 </mat-toolbar>
 
-<ng-content></ng-content>
-<router-outlet></router-outlet>
+<!-- The difference between sidenav and drawer is that sidenav targets the whole page
+    while drawer targets a portion of the page -->
+    <!-- Sidenav has two sections: the navbar itself and the content. -->
+<mat-sidenav-container class="sidenav-container" hasBackdrop="false">
+    <!-- The navbar. -->
+    <!-- Option: mode can be 'side', 'over', and 'push' -->
+    <mat-sidenav #sidenav mode="push" closed class="sidenav">
+        <p>I am a drawer! I am a drawer! I am a drawer! I am a drawer!</p>
+    </mat-sidenav>
+    <!-- The main content of the page should be restrained in the sidenav-container -->
+    <mat-sidenav-content class="sidenav-content">
+        <p>Main content here!</p>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
