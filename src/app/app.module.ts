@@ -36,20 +36,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VersionDialogComponent } from './version-dialog/version-dialog.component';
-
-import { HighlightJsModule } from 'ngx-highlight-js';
+import { CodeBlockComponent } from './code-block/code-block.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VersionDialogComponent
+    VersionDialogComponent,
+    CodeBlockComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HighlightJsModule,
     ...angularMaterialModules,
   ],
   providers: [],

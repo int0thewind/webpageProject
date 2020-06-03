@@ -41,3 +41,8 @@ html, body {
 body {
     margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+pre > code {
+    width: min(80vh, 1000px);
+    margin: auto;
+}
