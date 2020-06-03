@@ -37,6 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VersionDialogComponent } from './version-dialog/version-dialog.component';
 
+import { HighlightJsModule } from 'ngx-highlight-js';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,7 @@ import { VersionDialogComponent } from './version-dialog/version-dialog.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HighlightJsModule,
     ...angularMaterialModules,
   ],
   providers: [],
